@@ -20,7 +20,14 @@ llm:
 local:
   llm_hf_repo_id: TheBloke/Mistral-7B-Instruct-v0.1-GGUF
   llm_hf_model_file: mistral-7b-instruct-v0.1.Q4_K_M.gguf
-  embedding_hf_model_name: BAAI/bge-small-en-v1.5
+  # embedding_hf_model_name: BAAI/bge-small-en-v1.5
+  embedding_hf_model_name: thenlper/gte-large
+
+
+chinese:
+  llm_hf_repo_id: TheBloke/Chinese-Alpaca-2-13B-GGUF
+  llm_hf_model_file: chinese-alpaca-2-13b.Q4_K_M.gguf
+  embedding_hf_model_name: thenlper/gte-large-zh
 
 sagemaker:
   llm_endpoint_name: huggingface-pytorch-tgi-inference-2023-09-25-19-53-32-140
